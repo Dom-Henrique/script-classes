@@ -1,0 +1,33 @@
+:root{
+    --bg: #141414;
+    --color: #d1d1d1;
+    --high: rgb(10, 187, 78);
+}
+body{
+    background-color: var(--bg);
+    color: var(--color);
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+button{
+    background-color: var(--high);
+    border: none;
+    border-radius: 50px;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+    transition: .2s;
+    font-size: 2rem;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: rgb(71, 255, 47) 0px 0px 20px;
+    transition: .2s;
+}
