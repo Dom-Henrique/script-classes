@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --hg: rgb(19, 228, 200);
+    --bg: #1d1d1d;
+    --color: #d1d1d1;
+}
+
+body {
+    background-image: url("assets/images/artemis-ii-nasa-5k-3840x2160-25357.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    /* background-color: var(--bg); */
+    color: var(--color);
+    height: 100vh;
+    margin: 0 auto;
+}
+
+main {
+    backdrop-filter: blur(10px);
+    border: 1px solid #d1d1d185;
+    padding: 30px;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+main:hover {
+    backdrop-filter: blur(20px);
+    transition: .2s;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+input,
+button {
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: var(--hg);
+    font-weight: bolder;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: var(--hg) 0px 0px 40px;
+}
+
+input {
+    background-color: rgba(19, 228, 200, 0.15);
+    transition: .2s;
+    color: var(--color);
+}
+
+input:focus {
+    outline: none;
+    background-color: rgba(19, 228, 200, 0.25);
+    transition: .2s;
+}
+
+.result {
+    background-color: rgba(0, 0, 255, 0.25);
+    padding: 20px;
+    border: solid 2px rgba(0, 0, 255, 0.5);
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+span {
+    font-weight: 700;
+}
