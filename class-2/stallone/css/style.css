@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary: #F89C32;
+    --secondary: #18130E;
+    --text: white;
+    --glow: #f89c3276;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--secondary);
+    font-family: "Inter", sans-serif
+}
+
+h2{
+    font-size: 60px;
+    margin: 0;
+    color: var(--primary)
+}
+
+.pres-text h1 {
+    color: var(--primary);
+    font-size: 150px;
+    margin: 0px;
+}
+
+.pres-text p {
+    color: var(--text);
+    font-size: 30px;
+    margin: 0px;
+}
+
+.pres-text p,
+.pres-text h1 {
+    margin: 0px;
+}
+
+.pres {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pres img {
+    width: 1000px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: 20px;
+    filter: drop-shadow(10px 10px 10px black) ;
+}
+
+.brief{
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 40px;
+    justify-content: space-between;
+}
+
+.about-me div{
+    width: 800px;
+}
+
+.about-me img{
+    height: 900px;
+    transition: .2s;
+}
+
+.banner{
+    padding: 50px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.rocky {
+    color: var(--primary);
+    font-size: 20px;
+    margin: 200px 0 200px 0;
+    text-align: center;
+}
+
+.rocky div {
+    display: flex;
+    margin: 70px 0 70px 0;
+    justify-content: space-evenly;
+}
+
+.rocky img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px var(--glow);
+    transition: .4s;
+}
+
+.rocky img:hover,
+.about-me img:hover,
+.rambo img:hover {
+    transition: .4s;
+    transform: scale(1.05)
+}
+
+.rocky p {
+    height: 50px;
+    width: 700px;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+.behind-scenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.behind-scenes p {
+    min-width: 1200px;
+}
+
+.behind-scenes img {
+    width: 1200px
+}
+
+.rambo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    color: var(--primary)
+}
+
+.rambo img {
+    border-radius: 10px;
+    width: 800px;
+    box-shadow: 0px 0px 100px var(--glow);
+    transition: .4s;
+}
+
+.rambo p {
+    width: 700px;
+    text-align: justify;
+}
+
+.movies {
+    color: var(--primary);
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+figcaption {
+    line-height: 50px;
+}
+
+.rocky-movies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: .4s;
+}
+
+.movies img {
+    height: 700px;
+}
+
+.rambo-movies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: .4s;
+}
+
+.rocky-movies figure,
+.rambo-movies figure {
+    transition: .2s;
+}
+
+.rocky-movies figure:hover,
+.rambo-movies figure:hover {
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.rocky-movies img:hover,
+.rambo-movies img:hover {
+    box-shadow: 0px 0px 100px var(--glow);
+    transition: .2s;
+}
+
+#rocky-bs:hover {
+    transform: rotateY(20deg) rotateX(20deg)
+}
+
+#rambo-hurry:hover {
+    transform: rotateY(-20deg) rotateX(-20deg)
+}
+
+section {
+    margin: 200px;
+}
