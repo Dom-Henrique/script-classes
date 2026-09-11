@@ -1,0 +1,11 @@
+let [value1, value2] = prompt("Insert two numbers: ").trim().split(",");
+value1 = Number(value1);
+value2 = Number(value2);
+let sum = value1+value2;
+let dif = value1-value2;
+let product = value1*value2;
+let div;
+if (value2!=0) div = value1/value2;
+let rest = value1%value2;
+let pow = value1**value2;
+alert(`Sum: ${sum}\nDifference: ${dif}\nProduct: ${product}\nDivision: ${div}\nRest: ${rest}\nPow: ${pow}\n`);
