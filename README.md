@@ -8,6 +8,10 @@ Each class have your own folder. I'ts very common that all classes have some hom
 
 `📁 class-2` -> Free theme landing page; Click counter; Numbers Mean Calculator
 
+`📁 class-3` -> Input/Output questions
+
+`📁 class-4` -> Conditionals and loops questions
+
 # How to clone this project?
 Into a terminal of your preference, paste this command:
 
