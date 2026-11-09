@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243247;
+    background: #f4f7fb;
+    line-height: 1.5;
+}
+
+.container {
+    width: min(100% - 32px, 1100px);
+    margin: 0 auto;
+}
+
+.top {
+    padding: 32px 0;
+    background: #e4efff;
+    border-bottom: 4px solid #2b65b1;
+}
+
+.identify {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 12px 0;
+    color: #174a86;
+}
+
+.filter-area,
+.register-panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 16px;
+    padding: 20px;
+    margin: 24px 0;
+    background: #ffffff;
+    border: 1px solid #d8e0eb;
+    border-radius: 12px;
+}
+
+.register-panel {
+    display: block;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 180px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aab8ca;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.button {
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #e5ebf3;
+    color: #243247;
+    cursor: pointer;
+    font: inherit;
+}
+
+.main-button {
+    background: #245da8;
+    color: #ffffff;
+}
+
+.button-sec {
+    background: #ffffff;
+    border: 1px solid #245da8;
+    color: #174a86;
+}
+
+.button-danger {
+    background: #fbe7e7;
+    color: #922b2b;
+}
+
+.grade-of-degrees{
+    display: grid;
+    grid-template-columns: repeat((auto-fit, minmax(250px, 1fr)));
+    gap: 20px;
+}
+
+.card-degree h2{
+    color: #174a86;
+}
+
+.details{
+    padding: 12px;
+    background: #edf5ff;
+    border-radius: 6px;
+}
+
+.card-degree{
+    padding: 20px;
+    background: white;
+    border: 1px solid #d8e0eb;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(30, 50, 80, 0.06);
+}
+
+.message{
+    padding: 12px 16px;
+    background-color: #e6f1ff;
+    border-radius: 8px;
+}
+
+.sucess-message{
+    color: #14532d;
+    background: #dcfce7;
+}
+.error-message{
+    color: #922b2b;
+    background: #fee2e2;
+}
+
+.highlights{
+    border-color: #245da8;
+    box-shadow: 0 0 0 3px #c9e0ff;
+}
+
+.theme-toggle{
+    background: #fff7d6;
+}
+
+.hidden{
+    display: none;
+}
+
+.card-degree.expanded{
+
+}

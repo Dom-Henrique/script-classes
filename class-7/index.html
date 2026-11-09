@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Panel of Degrees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <div class="container">
+            <p class="identify">Script Language for Web</p>
+            <h1 id="main-title">Interactive Panel of Degrees</h1>
+            <p id="subtitle">Explore the degrees and meet your main caracters</p>
+            <button id="btn-theme" class="button-sec" type="button">Change highlight</button>
+        </div>
+    </header>
+    <main class="container">
+        <section class="panel-filters">
+            <div class="box">
+                <label for="" class="search-box">Filter by area</label>
+                <input type="search" name="" id="search-box" placeholder="Degree name">
+            </div>
+            <div class="box">
+                <label for="filter-area">Filter by area</label>
+                <select name="" id="filter-area">
+                    <option value="all">All areas</option>
+                    <option value="programming">Programming</option>
+                    <option value="infraestructure">Infraestructure</option>
+                    <option value="design">Design</option>
+                </select>
+            </div>
+            <button type="button" class="button" id="clear-button">Clear filters</button>
+        </section>
+        <p class="messages" id="messages" role="status">Explore the avaliable degrees.</p>
+        <section class="grade-of-degrees" id="degrees-list" aria-label="List of degrees">
+            <article class="card-degree" data-area="programming">
+                <h2>JavaScript for Web</h2>
+                <p class="description">Fundamentals of programming to web pages</p>
+                <button type="button" class="main-button" data-action="details">See details</button>
+                <p class="hidden-details">Variables, functions, DOM and events.</p>
+                <button type="button" class="button-danger" data-action="remove">Remove</button>
+            </article>
+            <article class="card-degree" data-area="infraestructure">
+                <h2>Fixing Problems</h2>
+                <p class="description">Assembly and maintenance</p>
+                <button type="button" class="main-button" data-action="details">See details</button>
+                <p class="hidden-details">Hardware, preventive and corrective maintenance.</p>
+                <button type="button" class="button-danger" data-action="remove">Remove</button>
+            </article>
+            <article class="card-degree" data-area="design">
+                <h2>Design of Interfaces</h2>
+                <p class="description">Visual hierarchy, colors and prototipation.</p>
+                <button type="button" class="main-button" data-action="details">See details</button>
+                <p class="hidden-details">Visual hierarchy, colors and prototipation.</p>
+                <button type="button" class="button-danger" data-action="remove">Remove</button>
+            </article>
+        </section>
+        <section class="register-panel">
+            <h2>Add course</h2>
+            <form action="">
+                <div class="box">
+                    <label for="degree-name">Degree name</label>
+                    <input type="text" name="name" id="degree-name" required placeholder="Ex.: Python">
+                </div>
+                <div class="box">
+                    <label for="degree-name">Degree name</label>
+                    <section name="area" required id="degree-name">
+                        <option value="programming"></option>
+                        <option value="infraestructure"></option>
+                        <option value="design"></option>
+                    </section>
+                </div>
+                <button type="submit" class="main-button">Register course.</button>
+            </form>
+        </section>
+    </main>
+    <footer class="foot">
+        <p>Didatic project - JavaScript and DOM</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
