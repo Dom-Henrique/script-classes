@@ -146,5 +146,26 @@ select {
 }
 
 .card-degree.expanded{
+    border-color: #245da8;
+    background-color: #f0f7ff;
+}
 
+.foot{
+    margin-top: 32px;
+    padding: 20px;
+    text-align: center;
+    color: #596579;
+}
+button:focus-visible,
+input:focus-visiblem
+select:focus-visible{
+    outline: 3px solid #74a9f5;
+    outline-offset: 2px;
+}
+
+@media (max-width: 600px){
+    .filter-area{
+        align-items: stretch;
+        flex-direction: column;
+    }
 }
