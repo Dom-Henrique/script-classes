@@ -1,83 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Panel of Degrees</title>
+    <title>Painel Interativo de Cursos | LSW</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="top">
+    <header class="topo">
         <div class="container">
-            <p class="identify">Script Language for Web</p>
-            <h1 id="main-title">Interactive Panel of Degrees</h1>
-            <p id="subtitle">Explore the degrees and meet your main caracters</p>
-            <button id="btn-theme" class="button-sec" type="button">Change highlight</button>
+            <p class="identificacao">Linguagens de Script para a Web</p>
+            <h1 id="titulo-principal">Painel Interativo de Cursos</h1>
+            <p id="subtitulo">
+                Explore os cursos e conheça suas principais características.
+            </p>
+            <button id="btn-tema" class="botao botao--secundario" type="button">
+                Alternar destaque
+            </button>
         </div>
     </header>
+
     <main class="container">
-        <section class="panel-filters">
-            <div class="box">
-                <label for="" class="search-box">Filter by area</label>
-                <input type="search" name="" id="search-box" placeholder="Degree name">
+        <section class="painel-filtros">
+            <div class="campo">
+                <label for="campo-busca">Buscar curso</label>
+                <input id="campo-busca" type="search" placeholder="Digite o nome do curso...">
             </div>
-            <div class="box">
-                <label for="filter-area">Filter by area</label>
-                <select name="" id="filter-area">
-                    <option value="all">All areas</option>
-                    <option value="programming">Programming</option>
-                    <option value="infraestructure">Infraestructure</option>
+            <div class="campo">
+                <label for="filtro-area">Filtrar por área</label>
+                <select id="filtro-area">
+                    <option value="todos">Todas as áreas</option>
+                    <option value="programacao">Programação</option>
+                    <option value="infraestrutura">Infraestrutura</option>
                     <option value="design">Design</option>
                 </select>
             </div>
-            <button type="button" class="button" id="clear-button">Clear filters</button>
+            <button id="btn-limpar" class="botao" type="button">Limpar filtros</button>
         </section>
-        <p class="messages" id="messages" role="status">Explore the avaliable degrees.</p>
-        <section class="grade-of-degrees" id="degrees-list" aria-label="List of degrees">
-            <article class="card-degree" data-area="programming">
-                <h2>JavaScript for Web</h2>
-                <p class="description">Fundamentals of programming to web pages</p>
-                <button type="button" class="main-button" data-action="details">See details</button>
-                <p class="hidden-details">Variables, functions, DOM and events.</p>
-                <button type="button" class="button-danger" data-action="remove">Remove</button>
+
+        <p id="mensagem" class="mensagem" role="status">
+            Explore os cursos disponíveis.
+        </p>
+
+        <section id="lista-cursos" class="grade-cursos" aria-label="Lista de cursos">
+            <article class="card-curso" data-area="programacao">
+                <h2>JavaScript para Web</h2>
+                <p class="descricao">Fundamentos da programação para páginas web.</p>
+                <button class="botao botao--principal" type="button" data-acao="detalhes">Ver detalhes</button>
+                <p class="detalhes oculto">Variáveis, funções, DOM e eventos.</p>
+                <button class="botao botao--perigo" type="button" data-acao="remover">Remover</button>
             </article>
-            <article class="card-degree" data-area="infraestructure">
-                <h2>Fixing Problems</h2>
-                <p class="description">Assembly and maintenance</p>
-                <button type="button" class="main-button" data-action="details">See details</button>
-                <p class="hidden-details">Hardware, preventive and corrective maintenance.</p>
-                <button type="button" class="button-danger" data-action="remove">Remove</button>
+            <article class="card-curso" data-area="infraestrutura">
+                <h2>Montagem e manutenção</h2>
+                <p class="descricao">Componentes, diagnóstico e manutenção.</p>
+                <button class="botao botao--principal" type="button" data-acao="detalhes">Ver detalhes</button>
+                <p class="detalhes oculto">Hardware, manutenção preventiva e corretiva</p>
+                <button class="botao botao--perigo" type="button" data-acao="remover">Remover</button>
             </article>
-            <article class="card-degree" data-area="design">
-                <h2>Design of Interfaces</h2>
-                <p class="description">Visual hierarchy, colors and prototipation.</p>
-                <button type="button" class="main-button" data-action="details">See details</button>
-                <p class="hidden-details">Visual hierarchy, colors and prototipation.</p>
-                <button type="button" class="button-danger" data-action="remove">Remove</button>
+            <article class="card-curso" data-area="programacao">
+                <h2>Design de Interfaces</h2>
+                <p class="descricao">Organização visual e prototipação.</p>
+                <button class="botao botao--principal" type="button" data-acao="detalhes">Ver detalhes</button>
+                <p class="detalhes oculto">Hierarquia visual, cores e prototipação.</p>
+                <button class="botao botao--perigo" type="button" data-acao="remover">Remover</button>
             </article>
         </section>
-        <section class="register-panel">
-            <h2>Add course</h2>
-            <form action="">
-                <div class="box">
-                    <label for="degree-name">Degree name</label>
-                    <input type="text" name="name" id="degree-name" required placeholder="Ex.: Python">
+
+        <section class="painel-cadastro">
+            <h2>Adicionar curso</h2>
+            <form id="form-cadastro">
+                <div class="campo">
+                    <label for="nome-curso">Nome do curso</label>
+                    <input id="nome-curso" name="nome" type="text" required placeholder="Ex.: Python">
                 </div>
-                <div class="box">
-                    <label for="degree-name">Degree name</label>
-                    <section name="area" required id="degree-name">
-                        <option value="programming"></option>
-                        <option value="infraestructure"></option>
-                        <option value="design"></option>
-                    </section>
+                <div class="campo">
+                    <label for="area-curso">Área</label>
+                    <select id="area-curso" name="area" required>
+                        <option value="javascript-web">JavaScript para Web</option>
+                        <option value="montagem-manutencao">Montagem e Manutenção</option>
+                        <option value="design-interfaces">Design de Interfaces</option>
+                    </select>
                 </div>
-                <button type="submit" class="main-button">Register course.</button>
+                <button class="botao botao--principal" type="submit">Cadastrar curso</button>
             </form>
         </section>
     </main>
-    <footer class="foot">
-        <p>Didatic project - JavaScript and DOM</p>
+    <footer class="rodape">
+        <p>Projeto didático - JS e DOM</p>
     </footer>
-    <script src="main.js"></script>
 </body>
+
 </html>
